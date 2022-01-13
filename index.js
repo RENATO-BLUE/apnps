@@ -8,6 +8,11 @@ app.get('/', function(req, res){
 app.get('/msg', function(req,res){
     res.send("Essa mensagem é automática!")
 })
+
+app.get('/Sobre', function(req,res){
+    res.send("Essa página esta sendo desenvolvido pelo Renato!")
+})
+
 app.listen(3333, function(){
     console.log("Conexão iniciada...")
 })
