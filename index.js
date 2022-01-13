@@ -25,7 +25,12 @@ app.get('/usuarios', function(req, res){
         {nome:'Iara', email:'iarablue@teste'}
     ]})
 })
-
+app.get('/add', function(req,res){
+    res.render('adiciona.ejs')
+})
+app.post('/add', function(req,res){
+    console.log(req.body.nome)
+})
 app.listen(3333, function(){
     console.log("Conexão iniciada...")
 })
