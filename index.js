@@ -29,7 +29,7 @@ app.get('/add', function(req,res){
     res.render('adiciona.ejs')
 })
 app.post('/add', function(req,res){
-    console.log(req.body.nome)
+    console.log(req.body.txtNome)
 })
 app.listen(3333, function(){
     console.log("Conexão iniciada...")
